@@ -4,6 +4,7 @@ import { additives } from "../assets/additives.js"
 
 console.log(additives)
 
+
 export default function AdditivesList() {
     return (
         <StyledAdditivesList className="additives-list">

@@ -1,54 +1,71 @@
 import styled from "styled-components"
 
 
-export const StyledAdditivesCategories = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 0.5rem;
-
-    .additive-category {
-        border: 1px solid #cbd5e1;
-        border-radius: 7px;
-        padding: 0.5rem;
-
-        .additive-nums {
-            font-weight: 700;
-        }
-
-        .additive-cat-name {
-            font-size: 12px;
-        }
-    }
-`
-
 export const StyledAdditivesList = styled.div`
-    width: 70%;
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 0.5rem;
-    padding: 1rem;
-`
-
-export const StyledAdditive = styled.div`
-    border: 1px solid #cbd5e1;
-    border-radius: 7px;
-    padding: 0.5rem;
     width: 100%;
-    max-width: 100%;
-    height: 7rem;
-    overflow: hidden;
 
-    &:hover {
-        cursor: pointer;
-        border: 1px solid #16a34a;
-    }
+    section {
+        display: flex;
+        align-items: flex-start;
+        margin: 3rem 0;
 
-    .additive-number {
-        font-weight: 700;
-    }
+        .class-content {
+            width: 20%;
+            padding: 1rem;
 
-    .additive-name {
-        font-size: 12px;
+            .class-header {
+                text-align: right;
+                border-bottom: 2px solid #334155;
+
+                .class-range {
+                    font-weight: 700;
+                    font-size: 1.5rem;
+                }
+
+                .class {
+                    font-size: 1.4rem;
+                }
+            }
+
+            .class-subranges {
+                text-align: right;
+                padding: 0.5rem 0;
+
+                .subrange {
+                    margin-bottom: 0.3rem;
+                }
+            }
+        }
+
+        .class-additives {
+            width: 80%;
+            padding: 1rem;
+            border-left: 1px solid #cbd5e1;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            gap: 1rem;
+
+            .additive {
+                border-radius: 7px;
+                border: 1px solid #cbd5e1;
+                padding: 0.5rem;
+                border-top: 7px solid #16a34a;
+
+                .additive-head {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .additive-number {
+                        font-weight: 700;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            .additive:hover {
+                box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+                cursor: pointer;
+            }
+        }
     }
 `

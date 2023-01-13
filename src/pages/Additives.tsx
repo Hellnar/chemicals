@@ -1,11 +1,12 @@
 import AdditivesFilter from "../components/additives/AdditivesFilter"
 import AdditivesList from "../components/additives/AdditivesList"
+import { StyledAdditives } from "./styled.js"
 
 export default function Additives() {
     return (
-        <div>
+        <StyledAdditives>
             <AdditivesFilter />
             <AdditivesList />
-        </div>
+        </StyledAdditives>
     )
 }

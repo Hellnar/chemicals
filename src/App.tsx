@@ -1,13 +1,11 @@
-import AdditivesList from "./components/AdditivesList"
-import AdditivesCategories from "./components/AdditivesCategories"
+import Additives from "./pages/Additives"
 
 function App() {
 
     return (
         <div className="App">
             <h1>Food additives</h1>
-            <AdditivesCategories />
-            <AdditivesList />
+            <Additives />
         </div>
     )
 }
